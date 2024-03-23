@@ -1,114 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: 'Sarabun', Prompt;
-}
-
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  /* background-color: rgb(255, 255, 136);
-  background-color: rgba(255, 255, 136, 0.5); */
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 5%;
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 16px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #6A0B0B;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 10px;
-  right: 45px;
-  font-size: 20px;
-}
-
-@media screen and (max-height: 500px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 20px;
-  top: 15px;
-  right: 35px;
-  }
-}
-</style>
-</head>
-<body>
-  <!-- Poyoh Workspace<br> -->
-
-<div id="myNav" class="overlay mt-3">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-  <a href="https://script.google.com/macros/s/AKfycbw95gDvwcKiYoIAaSorrYyOVglV9zU6OjvLrbCyBOXopCk1SOD8ej7pJskEUAZxN8E/exec"target="_blank">บริหารวิชาการ</a>
-  <a href="https://script.google.com/macros/s/AKfycbzFewqakqCw-bIDRNTIaJcHnqas0f1vm_86Xj7HHamqa1gMpVvkPAZSIy2ykBm_cacP8w/exec"target="_blank">บริหารงบประมาณ</a>
-  <a href="https://script.google.com/macros/s/AKfycby9f59XvoQgr6TJJydV4bMpSrD8dCrm1ClZjRL_SK8evY6ehydiapK9N0Y1dAHd49BW/exec"target="_blank">บริหารบุคคล</a>
-	<a href="https://script.google.com/macros/s/AKfycbzbk8BIoIMoahH3gaG-z1yX5eIEL9pAkhoEm43yaX3XVYswQHm_G0aR3pIMaAMuWARXKQ/exec"target="_blank">บริหารทั่วไป</a>
-  <a href="https://drive.google.com/drive/folders/18ygY9RZ8AuoPPTIxETBU6DsC5nDrL92q"target="_blank">12 นโยบาย</a>
-	<a href="https://drive.google.com/drive/folders/1Vlr0h_QV5CQpIUjFs0nw7a0GfmKqhoEe"target="_blank">คลังข้อสอบ</a>
-	
-	<a href="https://banpoyoh.yala1.go.th/management/download"target="_blank">ดาวน์โหลด</a>
-	<a href="https://banpoyoh.yala1.go.th/management/guidance"target="_blank">แนะนำการใช้งานโปรแกรม</a>
-	<!-- <a href="https://banpoyoh.yala1.go.th/management/after"target="_blank">แบบบันทึกหลังสอน</a> -->
-	<a href="https://banpoyoh.yala1.go.th/management/plc"target="_blank">แบบบันทึก PLC</a>
-	<a href="https://script.google.com/a/macros/yala1.go.th/s/AKfycbyttXqvJ6D9krIDzZ7vbTpcOY_9LKWpzPLupBHtNiVpL9XVMS5QuQdRy409Kr8LYCuOJw/exec"target="_blank">PA Online</a>
-	<a href="https://script.google.com/macros/s/AKfycbwlQ0knrwwy8dQCQCfhUHiDvyWfOlurGRAJh_YlxmK6Sk_oGkLfC31DWe6Zz1RffGk/exec"target="_blank">การพัฒนาตนเองและวิชาชีพ</a>
-	<a 
-	href="https://script.google.com/macros/s/AKfycbyCCrWkHKb9cP8JfQL0Bk29OcxVwkagmR8pNoqgo8IEWsJnz4hCOZpc9XXaaUgmgA5hhw/exec"target="_blank">จัดเก็บเอกสารออนไลน์</a>
-	 <a 
-	href="https://script.google.com/a/macros/yala1.go.th/s/AKfycbx7G88RGoS8vU0eIpFuhiUSY2ZKEMhCFKxiuxFdus7vlFVwTEXIEsualnR251-pB7fhlg/exec"target="_blank">ส่งงาน</a>
-	<!-- <a 
-	href="https://script.google.com/macros/s/AKfycbwF9cZZAwlagUX10cB_tF6E6heWL5oVCJ1lC5xUaxJUZwCey9cCtuIiAy_UVEnFGoeu8A/exec"target="_blank">ตรวจอนุมัติเอกสาร</a> -->
-	<a  
-	href="https://script.google.com/macros/s/AKfycbyZzp5L4ybvmw_2fFRirP0boXmT4KqrVtZm2Z0i3bLTvyWwaKpU2gLvowCiyN-gKoKmKw/exec"target="_blank">บันทึกวันลา</a> 
-	
-	<a href="https://sites.google.com/yala1.go.th/banpoyoh/management/upshare"target="_blank">อัพโหลดผลงาน</a>
-	<a href="https://sites.google.com/yala1.go.th/banpoyoh/sharing"target="_blank">ผลงานเผยแพร่</a>
-  <br> 
-  <br>  
-
-  <a href="<?= myURL(); ?>?page=main">กลับหน้าหลัก</a>
-    
-  </div>
-</div>
-
-<span style="float:none; font-size:18px;text-decoration-none: underline;cursor:pointer;color:white" onclick="openNav()">&#9196; Poyoh Workspace &#9196</span>
-
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
-     
-</body>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>งานทะเบียนครู</title>
+ </head>
+ <body>
+<iframe src="https://script.google.com/a/macros/yala1.go.th/s/AKfycbxRSFHsZMPxfWL7rcGPMX8z4pawdMNHpWLeDGvAjU4bJJ_JHuEh4WEAzjhNVQE2-GE4/exec" width="100%" height="800px" scrolling="no"</iframe>
+ </body>
 </html>
